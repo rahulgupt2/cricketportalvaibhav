@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+ <body body background="images/c2.jpg">
+<div class="container">
+	<div class="row">
+		
+        
+        <div class="col-md-12">
+        
+        <div class="table-responsive">
+
+              
+            
+              <table id="mytable" class="table table-bordred table-striped">
+                   
+                   <thead>
+                   
+                   
+                   <th>PlayerId</th>
+                    <th>Player Name</th>
+                     <th>Email</th>
+                     <th>Contact</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+                   </thead>
+    <tbody>
+   
+   
+     <tr>
+    
+    <form action="EditPlayer.jsp" method="GET">
+    <td><input type="text"  class="form-control" name="pid" value=""></td>												
+    <td><input type="text"  class="form-control" name="pid" value=""></td>
+    <td><input type="text"  class="form-control" name="pid" value=""></td>
+    <td><input type="text"  class="form-control" name="pid" value=""></td>
+    <td><input type="text"  class="form-control" name="pid" value=""></td>
+    <input type="hidden" name="name of form" value=""/>
+    
+     <td><button type="button" id="1" onclick="AddToDatabase(); return false;" class="btn btn-success">Edit</button></td>
+       <td><button type="button" class="btn btn-danger" onclick="location.href='EditPlayer.jsp?key=<%= resultset.getString(5) %>';"  />Delete</button></td>
+    </form>
+    </tr>
+   
+   </tbody>
+        
+</table>
+<script>
+function AddToDatabase() {
+    //window.open('temp.jsp','_parent', 'width=20,height=10');
+	var myWindow = window.open("temp.jsp", "", "width=700, height=300 ,resizable=yes scrollbars=yes");
+}
+
+
+</script>
+
+          </div> 
+        </div>
+	</div>
+</div>
+ 
+</html>

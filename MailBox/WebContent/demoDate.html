@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+ <meta http-equiv="content-type" content="text/html; charset=utf-8"/>  
+<link rel="stylesheet" type="text/css" href="datetimepicker/jquery.datetimepicker.css"/>
+  <style type="text/css">
+
+.custom-date-style {
+	background-color: red !important;
+}
+
+.input{	
+}
+.input-wide{
+	width: 500px;
+}
+
+</style>
+    
+</head>
+
+<body>
+<h3>DatePicker</h3>
+	<input type="text" id="datetimepicker2"/><br><br>
+	<h3>Inline DateTimePicker</h3>
+
+<script src="datetimepicker/jquery.js"></script>
+<script src="datetimepicker/build/jquery.datetimepicker.full.js"></script>
+<script>
+
+$('#datetimepicker2').datetimepicker({
+	
+	timepicker:true,
+	format:'d/m/Y',
+	formatDate:'Y/m/d',
+	
+});
+</script>
+</body>
+</html>
